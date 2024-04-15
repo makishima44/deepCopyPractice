@@ -42,13 +42,14 @@
   let man2FullCopy = { ...man2, friends: [...man2.friends] }; // your code
 
   // 5 Array of objects
+
   let people = [
     { name: "Peter", age: 30 },
     { name: "Steven", age: 32 },
     { name: "William", age: 28 },
   ];
 
-  let peopleFullCopy; // your code
+  let peopleDeepCopy = people.map((person) => ({ ...person }));
 
   // 6 Array of objects inside object
   let man3 = {
