@@ -4,6 +4,7 @@
   // https://www.youtube.com/watch?v=I8LNJpG60vI&feature=youtu.be
 
   // 1. Simple object
+
   let man = {
     name: "John",
     age: 28,
@@ -12,11 +13,13 @@
   let manFullCopy = { ...man }; //  your code
 
   // 2. Array of primitives
+
   let numbers = [1, 2, 3];
 
   let numbersFullCopy = [...numbers]; //  your code
 
   // 3. Object inside an object
+
   let man1 = {
     name: "John",
     age: 28,
@@ -29,13 +32,14 @@
   let man1FullCopy = { ...man1, mother: { ...man1.mother } }; // your code
 
   // 4. Array of primitives inside an object
+
   let man2 = {
     name: "John",
     age: 28,
     friends: ["Peter", "Steven", "William"],
   };
 
-  let man2FullCopy; // your code
+  let man2FullCopy = { ...man2, friends: [...man2.friends] }; // your code
 
   // 5 Array of objects
   let people = [
