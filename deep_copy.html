@@ -52,6 +52,7 @@
   let peopleDeepCopy = people.map((person) => ({ ...person }));
 
   // 6 Array of objects inside object
+
   let man3 = {
     name: "John",
     age: 28,
@@ -62,7 +63,10 @@
     ],
   };
 
-  let man3FullCopy; //  your code
+  let man3FullCopy = {
+    ...man3,
+    friends: man3.friends.map((el) => ({ ...el })),
+  }; //  your code
 
   // 7 Object inside an object, inside an object
   let man4 = {
